@@ -17,12 +17,11 @@
 body {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100vw;
-  height: 60vw;
+  height: 53vw;
 }
 
 .banner {
-  min-width: 40%;
+  min-width: 30%;
   height: 100%;
   background-image: url(./assets/img/banner.jpg);
   background-size: cover;
@@ -62,7 +61,7 @@ body {
 }
 
 .above-form {
-  padding: 80px 32px 40px;
+  padding: 40px 160px 40px 40px;
   line-height: 1.3;
   font-size: 22px;
   font-weight: 700;
@@ -120,4 +119,29 @@ input:focus {
 
 input:user-invalid {
   outline: 1px solid red;
+}
+
+.below-form {
+  padding: 40px 40px;
+}
+
+.submit {
+  padding: 8px 24px;
+  background-color: rgb(75, 75, 108);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 16px;
+}
+
+.submit:hover {
+  opacity: 85%;
+}
+
+.below-form a {
+  font-weight: 700;
+  color: rgb(75, 75, 108);
+  text-decoration: none;
 }
