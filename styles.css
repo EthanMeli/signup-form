@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'norseregular';
+  src: url('./assets/fonts/norse-webfont.woff2') format('woff2'),
+       url('./assets/fonts/norse-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -6,6 +14,47 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: blue;
+body {
+  width: 100vw;
+  height: 60vw;
+}
+
+.banner {
+  width: 30%;
+  height: 100%;
+  background-image: url(./assets/img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000002b;
+  top: 20%;
+  padding: 8px 0px;
+}
+
+.banner-footer {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 80%;
+}
+
+.banner-footer > a {
+  color: white;
+}
+
+.logo {
+  width: 4rem;
+  height: auto;
+}
+
+.header {
+  font-family: "norseregular", "Helvetica", sans-serif;
+  font-size: 64px;
+  color: white;
 }
